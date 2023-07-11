@@ -55,10 +55,8 @@ void loop() {
     for(int i = 1; i <= 4; i++){
       lfordom = random(2,5);
       for(int i = 1; i < lfordom; i++){
-        Left_Down();
-        random_delay(100,30);
-        Left_Up();
-        random_delay(60,20);
+        Left_Down(100,30);
+        Left_Up(60,20);
       }
     lcycle = random(3, 4);
     for(int i = 1; i <= lcycle; i++){
@@ -66,10 +64,8 @@ void loop() {
     }
     rfordom = random(2,5);
     for(int i = 1; i < rfordom; i++){
-      Right_Down();
-      random_delay(100,30);
-      Right_Up();
-      random_delay(60,20);
+      Right_Down(100,30);
+      Right_Up(60,20);
     }
     rcycle = random(3, 4);
     for(int i = 1; i <= rcycle; i++){
@@ -79,10 +75,8 @@ void loop() {
 
       lfordom = random(2,5);
       for(int i = 1; i < lfordom; i++){
-        Left_Down();
-        random_delay(100,30);
-        Left_Up();
-        random_delay(60,20);
+        Left_Down(100,30);
+        Left_Up(60,20);
       }
     lcycle = random(4, 5);
     for(int i = 1; i <= lcycle; i++){
@@ -90,10 +84,8 @@ void loop() {
     }
     rfordom = random(2,5);
     for(int i = 1; i < rfordom; i++){
-      Right_Down();
-      random_delay(100,30);
-      Right_Up();
-      random_delay(60,20);
+      Right_Down(100,30);
+      Right_Up(60,2);
     }
     rcycle = random(3, 4);
     for(int i = 1; i <= rcycle; i++){
@@ -105,372 +97,219 @@ void loop() {
 }
 
 void Build_Start(){
-    Down_Down();
-    random_delay(300,50);
-    D_Down();
-    random_delay(300,50);
-    D_Up();
-    random_delay(500,100);
-    V_Down();
-    random_delay(200,50);
-    V_Up();
-    random_delay(50,20);
-    A_Down();
-    random_delay(200,70);
-    A_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(50,20);    
-    Down_Up();
-    random_delay(300,50);
+    Down_Down(300,50);
+    D_Down(300,50);
+    D_Up(500,100);
+    V_Down(200,50);
+    V_Up(50,20);
+    A_Down(200,70);
+    A_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(50,20); 
+    Down_Up(300,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 파운틴 설치 후 아랫점 써든메익  
-    Left_Down();
-    random_delay(100,50);
+    Left_Down(100,50);
     Jump_cs();
     Jump_cs();
     Jump_cs();
-    Left_Up();
-    random_delay(100,50);
-    Up_Down();
-    random_delay(100,50);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    Right_Down();
-    random_delay(100,50);
-    Alt_Down();
-    random_delay(100,30);
-    Alt_Up();
-    random_delay(50,20); 
-    Right_Up();
-    random_delay(50,20); 
-    Up_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(100,20);
+    Left_Up(100,50);
+    Up_Down(100,50);
+    V_Down(100,50);
+    V_Up(50,20);
+    Right_Down(100,50);
+    Alt_Down(100,30);
+    Alt_Up(50,20);
+    Right_Up(50,20);
+    Up_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(100,2);
     //@@@@@@@@@@@@@@d@@@@@@@@@@@@@@@@@@@@@@@@@ 왼쪽 점프3번 어썰트 3층 진입 후 메익
-    Right_Down();
-    random_delay(100,30);
-    V_Down();
-    random_delay(100,30);
-    C_Down();
-    random_delay(100,30);
-    X_Down();
-    random_delay(100,30);
-    Z_Down();
-    random_delay(100,30);
-    V_Up();
-    random_delay(50,20);
-    C_Up();
-    random_delay(50,20);
-    X_Up();
-    random_delay(50,20);
-    Z_Up();
-    random_delay(50,20);
-    Right_Up();
-    random_delay(350,50);  
-    F_Down();
-    random_delay(300,50);
-    F_Up();
-    random_delay(900,90);
+    Right_Down(100,30);
+    V_Down(100,30);
+    C_Down(100,30);
+    X_Down(100,30);
+    Z_Down(100,30);
+    V_Up(50,20);
+    C_Up(50,20);
+    X_Up(50,20);
+    Z_Up(50,2);
+    Right_Up(350,50);
+    F_Down(300,50);
+    F_Up(900,90);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 오른쪽 점프 크스메익 후 플레어
-    Left_Down();
-    random_delay(100,30);
-    V_Down();
-    random_delay(100,30);
-    C_Down();
-    random_delay(100,30);
-    X_Down();
-    random_delay(100,30);
-    Z_Down();
-    random_delay(100,30);
-    V_Up();
-    random_delay(50,20);
-    C_Up();
-    random_delay(50,20);
-    X_Up();
-    random_delay(50,20);
-    Z_Up();
-    random_delay(50,20);
-    Left_Up();
-    random_delay(500,50);
+    Left_Down(0,0);
+    V_Down(0,0);
+    C_Down(0,0);
+    X_Down(0,0);
+    Z_Down(100,30);
+    V_Up(50,20);
+    C_Up(50,20);
+    X_Up(50,20);
+    Z_Up(50,20);
+    Left_Up(500,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 왼쪽 점프 크스메익 후 3층 복귀  
-    Down_Down();
-    random_delay(200,50);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    Delete_Down();
-    random_delay(300,50);
-    Delete_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(250,50);
+    Down_Down(200,50);
+    V_Down(100,50);
+    V_Up(50,20);
+    V_Down(100,50);
+    V_Up(50,20);
+    Delete_Down(300,50);
+    Delete_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(250,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 아랫점프 절개메익
-    V_Down();
-    random_delay(200,50);
-    V_Up();
-    random_delay(50,20);
-    X_Down();
-    random_delay(200,70);
-    X_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(50,20);    
-    Down_Up();
-    random_delay(300,50);
+    V_Down(200,50);
+    V_Up(50,20);
+    X_Down(200,70);
+    X_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(50,20);
+    Down_Up(300,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 아랫점프 크스메익
-    Right_Down();
-    random_delay(100,50);
+    Right_Down(100,50);
     Jump_cs();
     Jump_cs();
-    Right_Up();
-    random_delay(100,50); // 중요
+    Right_Up(100,50); // 중요
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 오른쪽 점프 3번 후 [ 딜레이 ] 중요
 }
 
 
 void Left_cycle(){
-    Left_Down();
-    random_delay(100,50);
+    Left_Down(100,50);
     Jump_cs();
     Jump_cs();
     Jump_cs();
-    Left_Up();
-    random_delay(100,50);
+    Left_Up(100,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 오른쪽 점프 3번
-    Up_Down();
-    random_delay(100,50);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    Right_Down();
-    random_delay(100,50);
-    Alt_Down();
-    random_delay(100,30);
-    Alt_Up();
-    random_delay(50,20); 
-    Right_Up();
-    random_delay(50,20); 
-    Up_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(50,20);
-    Left_Down();
-    random_delay(350,30);
-    Left_Up();
-    random_delay(2500,200);
+    Up_Down(100,50);
+    V_Down(100,50);
+    V_Up(50,20);
+    Right_Down(100,50);
+    Alt_Down(100,30);
+    Alt_Up(50,20);
+    Right_Up(50,2);
+    Up_Up(50,20);
+    Z_Down(100,5);
+    Z_Up(50,20);
+    Left_Down(350,30);
+    Left_Up(2500,200);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 윗점 어썰트 후 3층 복귀 [ 딜레이 ]
 }
 
 void Left_cycle_Nodelay(){
-    Left_Down();
-    random_delay(100,50);
+    Left_Down(100,50);
     Jump_cs();
     Jump_cs();
     Jump_cs();
-    Left_Up();
-    random_delay(100,50);
+    Left_Up(100,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 오른쪽 점프 3번
-    Up_Down();
-    random_delay(100,50);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    Right_Down();
-    random_delay(100,50);
-    Alt_Down();
-    random_delay(100,30);
-    Alt_Up();
-    random_delay(50,20); 
-    Right_Up();
-    random_delay(50,20); 
-    Up_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(50,20);
-    Left_Down();
-    random_delay(350,30);
-    Left_Up();
-    random_delay(1300,100);
+    Up_Down(100,50);
+    V_Down(100,50);
+    V_Up(50,20);
+    Right_Down(100,50);
+    Alt_Down(100,30);
+    Alt_Up(50,20);
+    Right_Up(50,20); 
+    Up_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(50,20);
+    Left_Down(350,30);
+    Left_Up(1300,100);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 윗점 어썰트 후 3층 복귀 [ 딜레이 ]
 }
 
 void Right_cycle(){
-    Down_Down();
-    random_delay(200,50);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    Delete_Down();
-    random_delay(300,50);
-    Delete_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(250,50);
+    Down_Down(200,50);
+    V_Down(100,50);
+    V_Up(50,20);
+    V_Down(100,50);
+    V_Up(50,20);
+    Delete_Down(300,50);
+    Delete_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(250,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 아랫점프 절개메익
-    V_Down();
-    random_delay(200,50);
-    V_Up();
-    random_delay(50,20);
-    X_Down();
-    random_delay(200,70);
-    X_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(50,20);    
-    Down_Up();
-    random_delay(300,50);
+    V_Down(200,50);
+    V_Up(50,20);
+    X_Down(200,70);
+    X_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(50,20); 
+    Down_Up(300,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 애랫점프 크스메익
-    Right_Down();
-    random_delay(100,50);
+    Right_Down(100,50);
     Jump_cs();
     Jump_cs();
-    Right_Up();
-    random_delay(2900,200); // 중요
+    Right_Up(2900,200); // 중요
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 오른쪽 점프 3번 후 [ 딜레이 ]
 }
 
 
 
 void Right_cycle_Nodelay(){
-    Down_Down();
-    random_delay(200,50);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    Delete_Down();
-    random_delay(300,50);
-    Delete_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(250,50);
+    Down_Down(200,50);
+    V_Down(100,50);
+    V_Up(50,20);
+    V_Down(100,50);
+    V_Up(50,20);
+    Delete_Down(300,5);
+    Delete_Up(50,20);
+    Z_Down(100,5);
+    Z_Up(250,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 아랫점프 절개메익
-    V_Down();
-    random_delay(200,50);
-    V_Up();
-    random_delay(50,20);
-    X_Down();
-    random_delay(200,70);
-    X_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(50,20);    
-    Down_Up();
-    random_delay(300,50);
+    V_Down(200,50);
+    V_Up(50,20);
+    X_Down(200,70);
+    X_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(50,20);
+    Down_Up(300,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 애랫점프 크스메익
-    Right_Down();
-    random_delay(100,50);
+    Right_Down(100,50);
     Jump_cs();
     Jump_cs();
-    Right_Up();
-    random_delay(50,20); // 중요
+    Right_Up(50,20); // 중요
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 오른쪽 점프 3번 후 [ 딜레이X ]
 }
 
 void Right_cycle_Middledelay(){
-    Down_Down();
-    random_delay(200,50);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,20);
-    Delete_Down();
-    random_delay(300,50);
-    Delete_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(250,50);
+    Down_Down(200,50);
+    V_Down(100,50);
+    V_Up(50,20);
+    V_Down(100,50);
+    V_Up(50,20);
+    Delete_Down(300,50);
+    Delete_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(250,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 아랫점프 절개메익
-    V_Down();
-    random_delay(200,50);
-    V_Up();
-    random_delay(50,20);
-    X_Down();
-    random_delay(200,70);
-    X_Up();
-    random_delay(50,20);
-    Z_Down();
-    random_delay(100,50);
-    Z_Up();
-    random_delay(50,20);    
-    Down_Up();
-    random_delay(300,50);
+    V_Down(200,50);
+    V_Up(50,20);
+    X_Down(200,70);
+    X_Up(50,20);
+    Z_Down(100,50);
+    Z_Up(50,20);    
+    Down_Up(300,50);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 애랫점프 크스메익
-    Right_Down();
-    random_delay(100,50);
+    Right_Down(100,50);
     Jump_cs();
     Jump_cs();
-    Right_Up();
-    random_delay(1900,100); // 중요
+    Right_Up(1900,100); // 중요
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 오른쪽 점프 3번 후 [ 딜레이X ]
 }
 
 
 void Up_Jump(){
-    Up_Down();
-    random_delay(100,30);
-    Left_Down();
-    random_delay(400,50);
-    V_Down();
-    random_delay(100,30);
-    C_Down();
-    random_delay(100,30);
-    Up_Up();
-    random_delay(50,20);
-    V_Up();
-    random_delay(50,20);
-    C_Up();
-    random_delay(50,20);
-    Left_Up();
-    Right_Down();
-    random_delay(1200,100);
-    Right_Up();
-    random_delay(500,50);
+    Up_Down(100,30);
+    Left_Down(400,50);
+    V_Down(100,30);
+    C_Down(100,30);
+    Up_Up(50,20);
+    V_Up(50,20);
+    C_Up(50,20);
+    Left_Up(0,0);
+    Right_Down(1200,100);
+    Right_Up(500,50);
 }
 
 
@@ -481,248 +320,170 @@ void Jump_cs(){
 
     meso = random(1, 3);
     if(meso == 1){
-      Z_Down();
-      random_delay(50,10);
-      Z_Up();
-      random_delay(50,10);    
+      Z_Down(50,10);
+      Z_Up(50,10);
     }
     
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,10);
-    V_Down();
-    random_delay(120,30);
-    C_Down();
-    random_delay(120,30);
+    V_Down(100,50);
+    V_Up(50,10);
+    V_Down(120,30);
+    C_Down(120,30);
 
     skill = random(1, 7);
     if(skill == 1){
-      Ctrl_Down();
-      random_delay(50,10);
-      Ctrl_Up();
-      random_delay(50,10);
+      Ctrl_Down(50,10);
+      Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down();
-      random_delay(50,10);
-      PageDown_Up();
-      random_delay(50,10);
+      PageDown_Down(50,10);
+      PageDown_Up(50,10);
     }
     
-    X_Down();
-    random_delay(100,50);
-    Z_Down();
-    random_delay(100,50);
-    V_Up();
-    C_Up();
-    X_Up();
-    Z_Up();
-    random_delay(600,80);
+    X_Down(100,50);
+    Z_Down(100,50);
+    V_Up(0,0);
+    C_Up(0,0);
+    X_Up(0,0);
+    Z_Up(600,80);
   }else if(tsp == 2){
 
     meso = random(1, 3);
     if(meso == 1){
-      Z_Down();
-      random_delay(50,10);
-      Z_Up();
-      random_delay(50,10);    
+      Z_Down(50,10);
+      Z_Up(50,10);   
     }
     
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,10);
-    V_Down();
-    random_delay(120,30);
-    C_Down();
-    random_delay(120,30);
+    V_Down(100,50);
+    V_Up(50,10);
+    V_Down(120,30);
+    C_Down(120,30);
 
     skill = random(1, 7);
     if(skill == 1){
-      Ctrl_Down();
-      random_delay(50,10);
-      Ctrl_Up();
-      random_delay(50,10);
+      Ctrl_Down(50,10);
+      Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down();
-      random_delay(50,10);
-      PageDown_Up();
-      random_delay(50,10);
+      PageDown_Down(50,10);
+      PageDown_Up(50,10);
     }
     
-    X_Down();
-    random_delay(100,50);
-    Z_Down();
-    random_delay(100,50);
-    V_Up();
-    C_Up();
-    X_Up();
-    Z_Up();
-    random_delay(600,80);
+    X_Down(100,50);
+    Z_Down(100,50);
+    V_Up(0,0);
+    C_Up(0,0);
+    X_Up(0,0);
+    Z_Up(600,80);
   }else if(tsp == 3){
 
     meso = random(1, 3);
     if(meso == 1){
-      Z_Down();
-      random_delay(50,10);
-      Z_Up();
-      random_delay(50,10);    
+      Z_Down(50,10);
+      Z_Up(50,10);   
     }
     
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,10);
-    V_Down();
-    random_delay(120,30);
-    C_Down();
-    random_delay(120,30);
+    V_Down(100,50);
+    V_Up(50,10);
+    V_Down(120,30);
+    C_Down(120,30);
 
     skill = random(1, 7);
     if(skill == 1){
-      Ctrl_Down();
-      random_delay(50,10);
-      Ctrl_Up();
-      random_delay(50,10);
+      Ctrl_Down(50,10);
+      Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down();
-      random_delay(50,10);
-      PageDown_Up();
-      random_delay(50,10);
+      PageDown_Down(50,10);
+      PageDown_Up(50,10);
     }
     
-    PageUp_Down();
-    random_delay(100,50);
-    Z_Down();
-    random_delay(100,50);
-    V_Up();
-    C_Up();
-    PageUp_Up();
-    Z_Up();
-    random_delay(600,80);
+    PageUp_Down(100,50);
+    Z_Down(100,50);
+    V_Up(0,0);
+    C_Up(0,0);
+    PageUp_Up(0,0);
+    Z_Up(600,80);
   }else if(tsp == 4){
 
     meso = random(1, 3);
     if(meso == 1){
-      Z_Down();
-      random_delay(50,10);
-      Z_Up();
-      random_delay(50,10);    
+      Z_Down(50,10);
+      Z_Up(50,10);  
     }
     
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,10);
-    V_Down();
-    random_delay(120,30);
-    C_Down();
-    random_delay(120,30);
+    V_Down(100,50);
+    V_Up(50,10);
+    V_Down(120,30);
+    C_Down(120,30);
 
     skill = random(1, 7);
     if(skill == 1){
-      Ctrl_Down();
-      random_delay(50,10);
-      Ctrl_Up();
-      random_delay(50,10);
+      Ctrl_Down(50,10);
+      Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down();
-      random_delay(50,10);
-      PageDown_Up();
-      random_delay(50,10);
+      PageDown_Down(50,10);
+      PageDown_Up(50,10);
     }
     
-    Insert_Down();
-    random_delay(100,50);
-    Z_Down();
-    random_delay(100,50);
-    V_Up();
-    C_Up();
-    Insert_Up();
-    Z_Up();
-    random_delay(600,80);
+    Insert_Down(100,50);
+    Z_Down(100,50);
+    V_Up(0,0);
+    C_Up(0,0);
+    Insert_Up(0,0);
+    Z_Up(600,80);
   }else if(tsp == 5){
 
     meso = random(1, 3);
     if(meso == 1){
-      Z_Down();
-      random_delay(50,10);
-      Z_Up();
-      random_delay(50,10);    
+      Z_Down(50,10);
+      Z_Up(50,10);
     }
     
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,10);
-    V_Down();
-    random_delay(120,30);
-    C_Down();
-    random_delay(120,30);
+    V_Down(100,50);
+    V_Up(50,10);
+    V_Down(120,30);
+    C_Down(120,30);
 
     skill = random(1, 7);
     if(skill == 1){
-      Ctrl_Down();
-      random_delay(50,10);
-      Ctrl_Up();
-      random_delay(50,10);
+      Ctrl_Down(50,10);
+      Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down();
-      random_delay(50,10);
-      PageDown_Up();
-      random_delay(50,10);
+      PageDown_Down(50,10);
+      PageDown_Up(50,10);
     }
     
-    Home_Down();
-    random_delay(100,50);
-    Z_Down();
-    random_delay(100,50);
-    V_Up();
-    C_Up();
-    Home_Up();
-    Z_Up();
-    random_delay(600,80);
+    Home_Down(100,50);
+    Z_Down(100,50);
+    V_Up(0,0);
+    C_Up(0,0);
+    Home_Up(0,0);
+    Z_Up(600,80);
   }else{
 
     meso = random(1, 3);
     if(meso == 1){
-      Z_Down();
-      random_delay(50,10);
-      Z_Up();
-      random_delay(50,10);    
+      Z_Down(50,10);
+      Z_Up(50,10);
     }
     
-    V_Down();
-    random_delay(100,50);
-    V_Up();
-    random_delay(50,10);
-    V_Down();
-    random_delay(120,30);
-    C_Down();
-    random_delay(120,30);
-
+    V_Down(100,50);
+    V_Up(50,10);
+    V_Down(120,30);
+    C_Down(120,30);
+    
     skill = random(1, 7);
     if(skill == 1){
-      Ctrl_Down();
-      random_delay(50,10);
-      Ctrl_Up();
-      random_delay(50,10);
+      Ctrl_Down(50,10);
+      Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down();
-      random_delay(50,10);
-      PageDown_Up();
-      random_delay(50,10);
+      PageDown_Down(50,10);
+      PageDown_Up(50,10);
     }
     
-    Insert_Down();
-    random_delay(100,50);
-    Z_Down();
-    random_delay(100,50);
-    V_Up();
-    C_Up();
-    Insert_Up();
-    Z_Up();
-    random_delay(600,80);
+    Insert_Down(100,50);
+    Z_Down(100,50);
+    V_Up(0,0);
+    C_Up(0,0);
+    Insert_Up(0,0);
+    Z_Up(600,80);
   }
 }
 
@@ -736,38 +497,46 @@ void Jump_cs(){
 
 //========================== "↑"
 
-void Up_Down(){
+void Up_Down(int basic, int margin){
   digitalWrite(2, HIGH);
+  random_delay(basic, margin);
 }
-void Up_Up(){
+void Up_Up(int basic, int margin){
   digitalWrite(2, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "↓"
 
-void Down_Down(){
+void Down_Down(int basic, int margin){
   digitalWrite(3, HIGH);
+  random_delay(basic, margin);
 }
-void Down_Up(){
+void Down_Up(int basic, int margin){
   digitalWrite(3, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "←"
 
-void Left_Down(){
+void Left_Down(int basic, int margin){
   digitalWrite(4, HIGH);
+  random_delay(basic, margin);
 }
-void Left_Up(){
+void Left_Up(int basic, int margin){
   digitalWrite(4, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "→"
 
-void Right_Down(){
+void Right_Down(int basic, int margin){
   digitalWrite(5, HIGH);
+  random_delay(basic, margin);
 }
-void Right_Up(){
+void Right_Up(int basic, int margin){
   digitalWrite(5, LOW);
+  random_delay(basic, margin);
 }
 
 //##########################
@@ -776,56 +545,68 @@ void Right_Up(){
 
 //========================== "Insert"
 
-void Insert_Down(){
+void Insert_Down(int basic, int margin){
   digitalWrite(6, HIGH);
+  random_delay(basic, margin);
 }
-void Insert_Up(){
+void Insert_Up(int basic, int margin){
   digitalWrite(6, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "Home"
 
-void Home_Down(){
+void Home_Down(int basic, int margin){
   digitalWrite(7, HIGH);
+  random_delay(basic, margin);
 }
-void Home_Up(){
+void Home_Up(int basic, int margin){
   digitalWrite(7, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "PageUp"
 
-void PageUp_Down(){
+void PageUp_Down(int basic, int margin){
   digitalWrite(8, HIGH);
+  random_delay(basic, margin);
 }
-void PageUp_Up(){
+void PageUp_Up(int basic, int margin){
   digitalWrite(8, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "Delete"
 
-void Delete_Down(){
+void Delete_Down(int basic, int margin){
   digitalWrite(9, HIGH);
+  random_delay(basic, margin);
 }
-void Delete_Up(){
+void Delete_Up(int basic, int margin){
   digitalWrite(9, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "End"
 
-void End_Down(){
+void End_Down(int basic, int margin){
   digitalWrite(10, HIGH);
+  random_delay(basic, margin);
 }
-void End_Up(){
+void End_Up(int basic, int margin){
   digitalWrite(10, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "PageDown"
 
-void PageDown_Down(){
+void PageDown_Down(int basic, int margin){
   digitalWrite(11, HIGH);
+  random_delay(basic, margin);
 }
-void PageDown_Up(){
+void PageDown_Up(int basic, int margin){
   digitalWrite(11, LOW);
+  random_delay(basic, margin);
 }
 
 //##########################
@@ -834,38 +615,46 @@ void PageDown_Up(){
 
 //========================== "RShift"
 
-void RShift_Down(){
+void RShift_Down(int basic, int margin){
   digitalWrite(12, HIGH);
+  random_delay(basic, margin);
 }
-void RShift_Up(){
+void RShift_Up(int basic, int margin){
   digitalWrite(12, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "Ctrl"
 
-void Ctrl_Down(){
+void Ctrl_Down(int basic, int margin){
   digitalWrite(22, HIGH);
+  random_delay(basic, margin);
 }
-void Ctrl_Up(){
+void Ctrl_Up(int basic, int margin){
   digitalWrite(22, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "Alt"
 
-void Alt_Down(){
+void Alt_Down(int basic, int margin){
   digitalWrite(23, HIGH);
+  random_delay(basic, margin);
 }
-void Alt_Up(){
+void Alt_Up(int basic, int margin){
   digitalWrite(23, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "LShift"
 
-void LShift_Down(){
+void LShift_Down(int basic, int margin){
   digitalWrite(24, HIGH);
+  random_delay(basic, margin);
 }
-void LShift_Up(){
+void LShift_Up(int basic, int margin){
   digitalWrite(24, LOW);
+  random_delay(basic, margin);
 }
 
 //##########################
@@ -874,38 +663,46 @@ void LShift_Up(){
 
 //========================== "Z"
 
-void Z_Down(){
+void Z_Down(int basic, int margin){
   digitalWrite(25, HIGH);
+  random_delay(basic, margin);
 }
-void Z_Up(){
+void Z_Up(int basic, int margin){
   digitalWrite(25, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "X"
 
-void X_Down(){
+void X_Down(int basic, int margin){
   digitalWrite(26, HIGH);
+  random_delay(basic, margin);
 }
-void X_Up(){
+void X_Up(int basic, int margin){
   digitalWrite(26, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "C"
 
-void C_Down(){
+void C_Down(int basic, int margin){
   digitalWrite(27, HIGH);
+  random_delay(basic, margin);
 }
-void C_Up(){
+void C_Up(int basic, int margin){
   digitalWrite(27, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "V"
 
-void V_Down(){
+void V_Down(int basic, int margin){
   digitalWrite(28, HIGH);
+  random_delay(basic, margin);
 }
-void V_Up(){
+void V_Up(int basic, int margin){
   digitalWrite(28, LOW);
+  random_delay(basic, margin);
 }
 
 //##########################
@@ -914,27 +711,33 @@ void V_Up(){
 
 //========================== "A"
 
-void A_Down(){
+void A_Down(int basic, int margin){
   digitalWrite(29, HIGH);
+  random_delay(basic, margin);
 }
-void A_Up(){
+void A_Up(int basic, int margin){
   digitalWrite(29, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "D"
 
-void D_Down(){
+void D_Down(int basic, int margin){
   digitalWrite(30, HIGH);
+  random_delay(basic, margin);
 }
-void D_Up(){
+void D_Up(int basic, int margin){
   digitalWrite(30, LOW);
+  random_delay(basic, margin);
 }
 
 //========================== "F"
 
-void F_Down(){
+void F_Down(int basic, int margin){
   digitalWrite(31, HIGH);
+  random_delay(basic, margin);
 }
-void F_Up(){
+void F_Up(int basic, int margin){
   digitalWrite(31, LOW);
+  random_delay(basic, margin);
 }
