@@ -6,7 +6,7 @@ void random_delay(long delay_value, int random_value)
 {
   delay_value = delay_value + random(-random_value, random_value);
   if(delay_value < 0) return;
-  delay(delay_value);
+  delay(delay_value); 
 }
 
 void isr()
@@ -100,7 +100,7 @@ void Build_Start(){
     Down_Down(300,50);
     D_Down(300,50);
     D_Up(500,100);
-    V_Down(200,50);
+    V_Down(300,50);
     V_Up(50,20);
     A_Down(200,70);
     A_Up(50,20);
@@ -138,9 +138,9 @@ void Build_Start(){
     F_Up(900,90);
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 오른쪽 점프 크스메익 후 플레어
     Left_Down(0,0);
-    V_Down(0,0);
-    C_Down(0,0);
-    X_Down(0,0);
+    V_Down(100,30);
+    C_Down(100,30);
+    X_Down(100,30);
     Z_Down(100,30);
     V_Up(50,20);
     C_Up(50,20);
