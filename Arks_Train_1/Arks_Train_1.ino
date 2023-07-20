@@ -331,6 +331,8 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);
     }
+    V_Down(80,30);
+    V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
 
@@ -356,6 +358,8 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);   
     }
+    V_Down(80,30);
+    V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
     skill = random(1, 7);
@@ -379,6 +383,8 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);   
     }
+    V_Down(80,30);
+    V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
     skill = random(1, 7);
@@ -402,6 +408,8 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);  
     }
+    V_Down(80,30);
+    V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
     skill = random(1, 7);
@@ -425,6 +433,8 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);
     }
+    V_Down(80,30);
+    V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
     skill = random(1, 7);
@@ -448,6 +458,8 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);
     }
+    V_Down(80,30);
+    V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
     skill = random(1, 7);
