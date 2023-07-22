@@ -86,17 +86,17 @@ void Build_Start(){
 
     Up_Down(100,50);
     V_Down(100,50);
-    V_Up(50,20);
+    V_Up(100,20);
     Left_Down(100,50);
     Alt_Down(100,30);
     Alt_Up(50,20);
     Left_Up(50,20);
     Up_Up(50,20);
     Z_Down(100,50);
-    Z_Up(300,50);
+    Z_Up(500,100);
     
     End_Down(150,30);
-    End_Up(300,50);
+    End_Up(500,100);
 
     Down_Down(300,50);
     D_Down(500,50);
@@ -108,7 +108,7 @@ void Build_Start(){
     Alt_Up(50,20);
     Z_Down(100,50);
     Z_Up(50,20); 
-    Down_Up(300,50);
+    Down_Up(500,100);
 
     Left_Down(100,50);
     Jump_cs_Fast();
@@ -116,20 +116,20 @@ void Build_Start(){
     Jump_cs_Fast();
     Left_Up(100,50);
 
-    Up_Down(100,50);
+    Up_Down(200,100);
     Right_Down(100,50);
     Alt_Down(100,30);
     Alt_Up(50,20);
     Right_Up(50,20);
     Up_Up(50,20);
     Z_Down(100,50);
-    Z_Up(300,50);
+    Z_Up(500,100);
 
     End_Down(150,30);
-    End_Up(300,50);
+    End_Up(500,100);
 
     F_Down(1000,100);
-    F_Up(300,50);
+    F_Up(500,100);
 
     Down_Down(300,50);
     V_Down(200,50);
@@ -138,12 +138,12 @@ void Build_Start(){
     Alt_Up(50,20);
     Z_Down(100,50);
     Z_Up(50,20); 
-    Down_Up(300,50);
+    Down_Up(500,100);
 
     Right_Down(100,50);
     Jump_cs_Fast();
     Jump_cs_Fast();
-    Right_Up(100,50);
+    Right_Up(200,50);
     
    
 }
@@ -331,7 +331,7 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);
     }
-    V_Down(80,30);
+    V_Down(100,30);
     V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
@@ -350,7 +350,7 @@ void Jump_cs_Fast(){
     V_Up(0,0);
     C_Up(0,0);
     X_Up(0,0);
-    Z_Up(600,80);
+    Z_Up(550,50);
     
   }else if(tsp == 2){
     meso = random(1, 3);
@@ -358,7 +358,7 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);   
     }
-    V_Down(80,30);
+    V_Down(100,30);
     V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
@@ -375,7 +375,7 @@ void Jump_cs_Fast(){
     V_Up(0,0);
     C_Up(0,0);
     X_Up(0,0);
-    Z_Up(600,80);
+    Z_Up(550,50);
     
   }else if(tsp == 3){
     meso = random(1, 3);
@@ -383,7 +383,7 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);   
     }
-    V_Down(80,30);
+    V_Down(100,30);
     V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
@@ -400,7 +400,7 @@ void Jump_cs_Fast(){
     V_Up(0,0);
     C_Up(0,0);
     PageUp_Up(0,0);
-    Z_Up(600,80);
+    Z_Up(550,50);
     
   }else if(tsp == 4){
     meso = random(1, 3);
@@ -408,7 +408,7 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);  
     }
-    V_Down(80,30);
+    V_Down(100,30);
     V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
@@ -425,7 +425,7 @@ void Jump_cs_Fast(){
     V_Up(0,0);
     C_Up(0,0);
     Insert_Up(0,0);
-    Z_Up(600,80);
+    Z_Up(550,50);
     
   }else if(tsp == 5){
     meso = random(1, 3);
@@ -433,7 +433,7 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);
     }
-    V_Down(80,30);
+    V_Down(100,30);
     V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
@@ -450,7 +450,7 @@ void Jump_cs_Fast(){
     V_Up(0,0);
     C_Up(0,0);
     Home_Up(0,0);
-    Z_Up(600,80);
+    Z_Up(550,50);
     
   }else{
     meso = random(1, 3);
@@ -458,7 +458,7 @@ void Jump_cs_Fast(){
       Z_Down(50,10);
       Z_Up(50,10);
     }
-    V_Down(80,30);
+    V_Down(100,30);
     V_Up(50,10);
     V_Down(100,30);
     C_Down(100,30);
@@ -475,7 +475,7 @@ void Jump_cs_Fast(){
     V_Up(0,0);
     C_Up(0,0);
     Insert_Up(0,0);
-    Z_Up(600,80);
+    Z_Up(550,50);
   }
 }
 
