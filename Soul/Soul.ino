@@ -6,7 +6,7 @@ void random_delay(long delay_value, int random_value)
 {
   delay_value = delay_value + random(-random_value, random_value);
   if(delay_value < 0) return;
-  delay(delay_value);
+  delay(delay_value); 
 }
 
 void isr()
@@ -50,432 +50,209 @@ void setup() {
 }
 
 void loop() {
-    Build_Start();
 
-    for(int i = 1; i <= 5; i++){
+  pown = random(1,5);
+  if(pown == 1){
+    Insert_Down(200,50);
+    Insert_Up(600,60);
+  }else if(pown == 2){
+    Home_Down(300,50);
+    Home_Up(650,60);
+  }else if(pown == 3){
+    PageUp_Down(350,50);
+    PageUp_Up(700,60);
+  }else{
+    Alt_Down(300,50);
+    Alt_Up(500,50);
 
-      lfordom = random(2,5);
+  }
+
+    lfordom = random(2,5);
       for(int i = 1; i < lfordom; i++){
         Left_Down(100,30);
         Left_Up(60,20);
       }
-    lcycle = random(3, 4);
-    for(int i = 1; i <= lcycle; i++){
-      Left_Down(100,30);
-      Jump_cs_Fast();   
-      Left_Up(60,20);
-    }
 
-    
-      rfordom = random(2,5);
+    Jump_cs();
+    Jump_cs();
+    Jump_cs();
+    Jump_cs();
+    Jump_cs();
+
+    Right_Down(250,50);
+    V_Down(130,30);
+    V_Up(50,20);
+    Up_Down(100,20);
+    V_Down(100,20);
+    V_Up(50,20);
+    Up_Up(50,20);
+    Right_Up(50,20);
+    X_Down(100,30);
+    X_Up(50,20);
+    X_Down(100,30);
+    X_Up(50,20);
+    X_Down(100,30);
+    X_Up(800,50);
+
+    A_Down(350,50);
+    A_Up(50,20);
+
+    rfordom = random(2,5);
     for(int i = 1; i < rfordom; i++){
       Right_Down(100,30);
-      Right_Up(60,20);
+      Right_Up(60,2);
     }
-    rcycle = random(3, 4);
-    for(int i = 1; i <= rcycle; i++){
-      Right_Down(100,30);
-      Jump_cs_Fast();
-      Right_Up(60,20);
-    }
-  }
-  Jump_cs_Fast();
+
+    Jump_cs();
+    Jump_cs();
+    Jump_cs();
+    Jump_cs();
+    random_delay(300, 100);
 }
 
-void Build_Start(){ 
-
-    Up_Down(100,50);
-    V_Down(100,50);
-    V_Up(100,20);
-    Left_Down(100,50);
-    Alt_Down(100,30);
-    Alt_Up(50,20);
-    Left_Up(50,20);
-    Up_Up(50,20);
-    Z_Down(100,50);
-    Z_Up(500,100);
+void Build_Start(){
     
-    End_Down(150,30);
-    End_Up(500,100);
-
-    Down_Down(300,50);
-    D_Down(500,50);
-    D_Up(500,100);
-
-    V_Down(200,50);
-    V_Up(100,20);
-    Alt_Down(100,30);
-    Alt_Up(50,20);
-    Z_Down(100,50);
-    Z_Up(50,20); 
-    Down_Up(500,100);
-
-    Left_Down(100,50);
-    Jump_cs_Fast();
-    Jump_cs_Fast();
-    Jump_cs_Fast();
-    Left_Up(100,50);
-
-    Up_Down(200,100);
-    Right_Down(100,50);
-    Alt_Down(100,30);
-    Alt_Up(50,20);
-    Right_Up(50,20);
-    Up_Up(50,20);
-    Z_Down(100,50);
-    Z_Up(500,100);
-
-    End_Down(150,30);
-    End_Up(500,100);
-
-    F_Down(1000,100);
-    F_Up(500,100);
-
-    Down_Down(300,50);
-    V_Down(200,50);
-    V_Up(200,50);
-    Alt_Down(100,30);
-    Alt_Up(50,20);
-    Z_Down(100,50);
-    Z_Up(50,20); 
-    Down_Up(500,100);
-
-    Right_Down(100,50);
-    Jump_cs_Fast();
-    Jump_cs_Fast();
-    Right_Up(200,50);
-    
-   
 }
+
+
+
+
+void Up_Jump(){
+    Up_Down(100,30);
+    Left_Down(400,50);
+    V_Down(100,30);
+    C_Down(100,30);
+    Up_Up(50,20);
+    V_Up(50,20);
+    C_Up(50,20);
+    Left_Up(0,0);
+    Right_Down(1200,100);
+    Right_Up(500,50);
+}
+
 
 void Jump_cs(){
 
   tsp = random(1,7);
   if(tsp == 1){
 
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);
-    }
-    
-    V_Down(100,50);
+    meso = random(1, 3); 
+    V_Down(150,30);
+    V_Up(50,10);
+    V_Down(100,30);
     V_Up(50,10);
     V_Down(120,30);
-    C_Down(120,30);
 
     skill = random(1, 7);
     if(skill == 1){
       Ctrl_Down(50,10);
       Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
+      C_Down(50,10);
+      C_Up(50,10);
     }
     
     X_Down(100,50);
-    Z_Down(100,50);
     V_Up(0,0);
-    C_Up(0,0);
-    X_Up(0,0);
-    Z_Up(600,80);
+    X_Up(620,60);
   }else if(tsp == 2){
 
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);   
-    }
-    
-    V_Down(100,50);
+    V_Down(150,30);
+    V_Up(50,10);
+    V_Down(100,30);
     V_Up(50,10);
     V_Down(120,30);
-    C_Down(120,30);
 
     skill = random(1, 7);
     if(skill == 1){
       Ctrl_Down(50,10);
       Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
+      C_Down(50,10);
+      C_Up(50,10);
     }
     
     X_Down(100,50);
-    Z_Down(100,50);
     V_Up(0,0);
-    C_Up(0,0);
-    X_Up(0,0);
-    Z_Up(600,80);
+    X_Up(620,60);
   }else if(tsp == 3){
 
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);   
-    }
-    
-    V_Down(100,50);
-    V_Up(50,10);
-    V_Down(120,30);
-    C_Down(120,30);
-
-    skill = random(1, 7);
-    if(skill == 1){
-      Ctrl_Down(50,10);
-      Ctrl_Up(50,10);
-    }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
-    }
-    
-    PageUp_Down(100,50);
-    Z_Down(100,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    PageUp_Up(0,0);
-    Z_Up(600,80);
-  }else if(tsp == 4){
-
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);  
-    }
-    
-    V_Down(100,50);
-    V_Up(50,10);
-    V_Down(120,30);
-    C_Down(120,30);
-
-    skill = random(1, 7);
-    if(skill == 1){
-      Ctrl_Down(50,10);
-      Ctrl_Up(50,10);
-    }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
-    }
-    
-    Insert_Down(100,50);
-    Z_Down(100,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    Insert_Up(0,0);
-    Z_Up(600,80);
-  }else if(tsp == 5){
-
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);
-    }
-    
-    V_Down(100,50);
-    V_Up(50,10);
-    V_Down(120,30);
-    C_Down(120,30);
-
-    skill = random(1, 7);
-    if(skill == 1){
-      Ctrl_Down(50,10);
-      Ctrl_Up(50,10);
-    }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
-    }
-    
-    Home_Down(100,50);
-    Z_Down(100,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    Home_Up(0,0);
-    Z_Up(600,80);
-  }else{
-
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);
-    }
-    
-    V_Down(100,50);
-    V_Up(50,10);
-    V_Down(120,30);
-    C_Down(120,30);
-    
-    skill = random(1, 7);
-    if(skill == 1){
-      Ctrl_Down(50,10);
-      Ctrl_Up(50,10);
-    }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
-    }
-    
-    Insert_Down(100,50);
-    Z_Down(100,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    Insert_Up(0,0);
-    Z_Up(600,80);
-  }
-}
-
-void Jump_cs_Fast(){
-
-  tsp = random(1,7);
-  if(tsp == 1){
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);
-    }
-    V_Down(100,30);
+    V_Down(150,30);
     V_Up(50,10);
     V_Down(100,30);
-    C_Down(100,30);
-
+    V_Up(50,10);
+    V_Down(120,30);
     skill = random(1, 7);
     if(skill == 1){
       Ctrl_Down(50,10);
       Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
+      C_Down(50,10);
+      C_Up(50,10);
     }
     
     X_Down(100,50);
-    Z_Down(100,50);
     V_Up(0,0);
-    C_Up(0,0);
-    X_Up(0,0);
-    Z_Up(550,50);
-    
-  }else if(tsp == 2){
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);   
-    }
-    V_Down(100,30);
-    V_Up(50,10);
-    V_Down(100,30);
-    C_Down(100,30);
-    skill = random(1, 7);
-    if(skill == 1){
-      Ctrl_Down(50,10);
-      Ctrl_Up(50,10);
-    }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
-    }
-    X_Down(100,50);
-    Z_Down(100,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    X_Up(0,0);
-    Z_Up(550,50);
-    
-  }else if(tsp == 3){
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);   
-    }
-    V_Down(100,30);
-    V_Up(50,10);
-    V_Down(100,30);
-    C_Down(100,30);
-    skill = random(1, 7);
-    if(skill == 1){
-      Ctrl_Down(50,10);
-      Ctrl_Up(50,10);
-    }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
-    }
-    PageUp_Down(100,50);
-    Z_Down(100,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    PageUp_Up(0,0);
-    Z_Up(550,50);
-    
+    X_Up(620,60);
   }else if(tsp == 4){
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);  
-    }
-    V_Down(100,30);
+
+    V_Down(150,30);
     V_Up(50,10);
     V_Down(100,30);
-    C_Down(100,30);
+    V_Up(50,10);
+    V_Down(120,30);
+
     skill = random(1, 7);
     if(skill == 1){
       Ctrl_Down(50,10);
       Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
+      C_Down(50,10);
+      C_Up(50,10);
     }
-    Insert_Down(100,50);
-    Z_Down(100,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    Insert_Up(0,0);
-    Z_Up(550,50);
     
+    X_Down(100,50);
+    V_Up(0,0);
+    X_Up(620,60);
   }else if(tsp == 5){
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);
-    }
-    V_Down(100,30);
+
+    V_Down(150,30);
     V_Up(50,10);
     V_Down(100,30);
-    C_Down(100,30);
+    V_Up(50,10);
+    V_Down(120,30);
+
     skill = random(1, 7);
     if(skill == 1){
       Ctrl_Down(50,10);
       Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
+      C_Down(50,10);
+      C_Up(50,10);
     }
-    Home_Down(100,50);
-    Z_Down(100,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    Home_Up(0,0);
-    Z_Up(550,50);
     
+    X_Down(100,50);
+    V_Up(0,0);
+    X_Up(620,60);
   }else{
-    meso = random(1, 3);
-    if(meso == 1){
-      Z_Down(50,10);
-      Z_Up(50,10);
-    }
-    V_Down(100,30);
+    V_Down(150,30);
     V_Up(50,10);
     V_Down(100,30);
-    C_Down(100,30);
+    V_Up(50,10);
+    V_Down(120,30);
+    
     skill = random(1, 7);
     if(skill == 1){
       Ctrl_Down(50,10);
       Ctrl_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,10);
-      PageDown_Up(50,10);
+      C_Down(50,10);
+      C_Up(50,10);
     }
-    Insert_Down(100,50);
-    Z_Down(100,50);
+    
+    X_Down(100,50);
     V_Up(0,0);
-    C_Up(0,0);
-    Insert_Up(0,0);
-    Z_Up(550,50);
+    X_Up(620,60);
   }
 }
 
@@ -733,3 +510,4 @@ void F_Up(int basic, int margin){
   digitalWrite(31, LOW);
   random_delay(basic, margin);
 }
+
