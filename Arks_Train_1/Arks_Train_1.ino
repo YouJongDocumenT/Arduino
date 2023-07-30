@@ -7,7 +7,7 @@ void random_delay(long delay_value, int random_value)
   delay_value = delay_value + random(-random_value, random_value);
   if(delay_value < 0) return;
   delay(delay_value);
-}
+} 
 
 void isr()
 {
