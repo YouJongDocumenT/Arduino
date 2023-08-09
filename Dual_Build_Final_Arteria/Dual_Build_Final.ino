@@ -53,25 +53,13 @@ void loop() {
     Build_Start();
 
     for(int i = 0; i <= 0; i++){
-      furi();
-    }
-      /*
-      cycle = random(1,7);
+      cycle = random(1,4);
       if(cycle == 1){
-        furi();
-      }else if(cycle == 2){
         Bleto();
-      }else if(cycle == 3){
-        Cosol();
-      }else if(cycle == 4){
-        Sinme();
-      }else if(cycle == 5){
-        sudden();
       }else{
         furi();
       }
-      */
-    
+    } 
     furi_t();
     Jump_D();
     
@@ -131,10 +119,11 @@ void Build_Start(){
 
     S_Down(300,30);
     S_Up(600,60);
-    Right_Down(150,20);
+    Right_Down(200,20);
     X_Down(100,20);
-    X_Up(50,20);
-    Right_Up(1300,50);
+    Right_Up(50,20);
+    X_Up(1100,100);
+    
 
     Down_Down(300,50);
     V_Down(200,30);
@@ -185,10 +174,10 @@ void furi(){
 
     S_Down(300,30);
     S_Up(600,60);
-    Right_Down(150,20);
+    Right_Down(200,20);
     X_Down(100,20);
-    X_Up(50,20);
-    Right_Up(1300,100);
+    Right_Up(50,20);
+    X_Up(1100,100);
 
     E_Down(300,50);
     E_Up(50,20);
@@ -232,10 +221,10 @@ void sudden(){
 
     S_Down(300,30);
     S_Up(600,60);
-    Right_Down(150,20);
+    Right_Down(200,20);
     X_Down(100,20);
-    X_Up(50,20);
-    Right_Up(1300,100);
+    Right_Up(50,20);
+    X_Up(1100,100);
 
     E_Down(300,50);
     E_Up(50,20);
@@ -281,10 +270,10 @@ void Sinme(){
 
     S_Down(300,30);
     S_Up(600,60);
-    Right_Down(150,20);
+    Right_Down(200,20);
     X_Down(100,20);
-    X_Up(50,20);
-    Right_Up(1300,100);
+    Right_Up(50,20);
+    X_Up(1100,100);
 
     E_Down(300,50);
     E_Up(50,20);
@@ -330,10 +319,10 @@ void Cosol(){
 
     S_Down(300,30);
     S_Up(600,60);
-    Right_Down(150,20);
+    Right_Down(200,20);
     X_Down(100,20);
-    X_Up(50,20);
-    Right_Up(1300,100);
+    Right_Up(50,20);
+    X_Up(1100,100);
 
     E_Down(300,50);
     E_Up(50,20);
@@ -379,10 +368,10 @@ void Bleto(){
 
     S_Down(300,30);
     S_Up(600,60);
-    Right_Down(150,20);
+    Right_Down(200,20);
     X_Down(100,20);
-    X_Up(50,20);
-    Right_Up(1300,100);
+    Right_Up(50,20);
+    X_Up(1100,100);
 
     E_Down(300,50);
     E_Up(50,20);
@@ -392,9 +381,9 @@ void Bleto(){
     V_Up(50,20);
     Down_Up(50,20);
 
-    Left_Down(80,20);
+    Left_Down(350,30);
     End_Down(200,50);
-    End_Up(1000,100);
+    End_Up(700,800);
     Left_Up(50,20);
 
     Right_Down(300,30);
@@ -439,8 +428,8 @@ void furi_t(){
     S_Up(600,60);
     Right_Down(150,20);
     X_Down(100,20);
-    X_Up(50,20);
-    Right_Up(1400,50);
+    Right_Up(50,20);
+    X_Up(1100,100);
 
     E_Down(300,50);
     E_Up(50,20);
