@@ -190,6 +190,9 @@ void furi(){
     X_Up(50,20);
     Right_Up(1300,100);
 
+    E_Down(300,50);
+    E_Up(50,20);
+
     Down_Down(300,50);
     V_Down(200,30);
     V_Up(50,20);
@@ -233,6 +236,9 @@ void sudden(){
     X_Down(100,20);
     X_Up(50,20);
     Right_Up(1300,100);
+
+    E_Down(300,50);
+    E_Up(50,20);
 
     Down_Down(300,50);
     V_Down(200,30);
@@ -280,6 +286,9 @@ void Sinme(){
     X_Up(50,20);
     Right_Up(1300,100);
 
+    E_Down(300,50);
+    E_Up(50,20);
+
     Down_Down(300,50);
     V_Down(200,30);
     V_Up(50,20);
@@ -326,6 +335,9 @@ void Cosol(){
     X_Up(50,20);
     Right_Up(1300,100);
 
+    E_Down(300,50);
+    E_Up(50,20);
+
     Down_Down(300,50);
     V_Down(200,30);
     V_Up(50,20);
@@ -371,6 +383,9 @@ void Bleto(){
     X_Down(100,20);
     X_Up(50,20);
     Right_Up(1300,100);
+
+    E_Down(300,50);
+    E_Up(50,20);
 
     Down_Down(300,50);
     V_Down(200,30);
@@ -426,6 +441,9 @@ void furi_t(){
     X_Down(100,20);
     X_Up(50,20);
     Right_Up(1400,50);
+
+    E_Down(300,50);
+    E_Up(50,20);
 
     Down_Down(300,50);
     V_Down(200,30);
