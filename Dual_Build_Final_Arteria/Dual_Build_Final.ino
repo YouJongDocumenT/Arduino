@@ -53,12 +53,7 @@ void loop() {
     Build_Start();
 
     for(int i = 0; i <= 0; i++){
-      cycle = random(1,4);
-      if(cycle == 1){
-        Bleto();
-      }else{
         furi();
-      }
     } 
     furi_t();
     Jump_D();
@@ -479,8 +474,8 @@ void Jump_cs(){
 
     skill = random(1, 7);
     if(skill == 1){
-      Q_Down(50,10);
-      Q_Up(50,10);
+      End_Down(50,10);
+      End_Up(50,10);
     }else if(skill == 4){
       PageDown_Down(100,10);
       PageDown_Up(100,10);
@@ -498,8 +493,8 @@ void Jump_cs(){
 
     skill = random(1, 7);
     if(skill == 1){
-      Q_Down(50,10);
-      Q_Up(50,10);
+      End_Down(50,10);
+      End_Up(50,10);
     }else if(skill == 4){
       PageDown_Down(100,10);
       PageDown_Up(100,10);
@@ -517,8 +512,8 @@ void Jump_cs(){
 
     skill = random(1, 7);
     if(skill == 1){
-      Q_Down(50,10);
-      Q_Up(50,10);
+      End_Down(50,10);
+      End_Up(50,10);
     }else if(skill == 4){
       PageDown_Down(100,10);
       PageDown_Up(100,10);
@@ -536,8 +531,8 @@ void Jump_cs(){
 
     skill = random(1, 7);
     if(skill == 1){
-      Q_Down(50,10);
-      Q_Up(50,10);
+      End_Down(50,10);
+      End_Up(50,10);
     }else if(skill == 4){
       PageDown_Down(100,10);
       PageDown_Up(100,10);
@@ -556,8 +551,8 @@ void Jump_cs(){
 
     skill = random(1, 7);
     if(skill == 1){
-      Q_Down(50,10);
-      Q_Up(50,10);
+      End_Down(50,10);
+      End_Up(50,10);
     }else if(skill == 4){
       PageDown_Down(100,10);
       PageDown_Up(100,10);
@@ -575,8 +570,8 @@ void Jump_cs(){
     
     skill = random(1, 7);
     if(skill == 1){
-      Q_Down(50,10);
-      Q_Up(50,10);
+      End_Down(50,10);
+      End_Up(50,10);
     }else if(skill == 4){
       PageDown_Down(100,10);
       PageDown_Up(100,10);
