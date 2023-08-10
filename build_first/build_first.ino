@@ -75,7 +75,7 @@ void loop() {
 
     fordom = random(1,3);
     if(tsp == 1){
-      PageDown_Down(300,30);
+      PageDown_Down(350,30);
       PageDown_Up(350,30);
     }
     for(int i = 0; i <= 2; i++){
@@ -278,7 +278,7 @@ void bleto(){
   V_Up(50,20);
   X_Down(200,20);
   X_Up(50,20);
-  Down_Up(300,20);
+  Down_Up(400,40);
 
 
 }
