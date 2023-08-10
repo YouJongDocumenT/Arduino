@@ -243,44 +243,44 @@ void Jump_cs(){
 //========================== "↑"
 
 void Up_Down(int basic, int margin){
-  digitalWrite(2, HIGH);
+  digitalWrite(23, HIGH);
   random_delay(basic, margin);
 }
 void Up_Up(int basic, int margin){
-  digitalWrite(2, LOW);
-  random_delay(basic, margin);
-}
-
-//========================== "↓"
-
-void Down_Down(int basic, int margin){
-  digitalWrite(3, HIGH);
-  random_delay(basic, margin);
-}
-void Down_Up(int basic, int margin){
-  digitalWrite(3, LOW);
+  digitalWrite(23, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "←"
 
 void Left_Down(int basic, int margin){
-  digitalWrite(4, HIGH);
+  digitalWrite(45, HIGH);
   random_delay(basic, margin);
 }
 void Left_Up(int basic, int margin){
-  digitalWrite(4, LOW);
+  digitalWrite(45, LOW);
+  random_delay(basic, margin);
+}
+
+//========================== "↓"
+
+void Down_Down(int basic, int margin){
+  digitalWrite(27, HIGH);
+  random_delay(basic, margin);
+}
+void Down_Up(int basic, int margin){
+  digitalWrite(27, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "→"
 
 void Right_Down(int basic, int margin){
-  digitalWrite(5, HIGH);
+  digitalWrite(46, HIGH);
   random_delay(basic, margin);
 }
 void Right_Up(int basic, int margin){
-  digitalWrite(5, LOW);
+  digitalWrite(46, LOW);
   random_delay(basic, margin);
 }
 
@@ -291,114 +291,102 @@ void Right_Up(int basic, int margin){
 //========================== "Insert"
 
 void Insert_Down(int basic, int margin){
-  digitalWrite(6, HIGH);
+  digitalWrite(25, HIGH);
   random_delay(basic, margin);
 }
 void Insert_Up(int basic, int margin){
-  digitalWrite(6, LOW);
+  digitalWrite(25, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "Home"
 
 void Home_Down(int basic, int margin){
-  digitalWrite(7, HIGH);
+  digitalWrite(24, HIGH);
   random_delay(basic, margin);
 }
 void Home_Up(int basic, int margin){
-  digitalWrite(7, LOW);
+  digitalWrite(24, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "PageUp"
 
 void PageUp_Down(int basic, int margin){
-  digitalWrite(8, HIGH);
+  digitalWrite(39, HIGH);
   random_delay(basic, margin);
 }
 void PageUp_Up(int basic, int margin){
-  digitalWrite(8, LOW);
+  digitalWrite(39, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "Delete"
 
 void Delete_Down(int basic, int margin){
-  digitalWrite(9, HIGH);
+  digitalWrite(29, HIGH);
   random_delay(basic, margin);
 }
 void Delete_Up(int basic, int margin){
-  digitalWrite(9, LOW);
+  digitalWrite(29, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "End"
 
 void End_Down(int basic, int margin){
-  digitalWrite(10, HIGH);
+  digitalWrite(22, HIGH);
   random_delay(basic, margin);
 }
 void End_Up(int basic, int margin){
-  digitalWrite(10, LOW);
+  digitalWrite(22, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "PageDown"
 
 void PageDown_Down(int basic, int margin){
-  digitalWrite(11, HIGH);
+  digitalWrite(31, HIGH);
   random_delay(basic, margin);
 }
 void PageDown_Up(int basic, int margin){
-  digitalWrite(11, LOW);
+  digitalWrite(31, LOW);
   random_delay(basic, margin);
 }
 
 //##########################
 //########[사이드키]#########
 //##########################
-
-//========================== "RShift"
-
-void RShift_Down(int basic, int margin){
-  digitalWrite(12, HIGH);
-  random_delay(basic, margin);
-}
-void RShift_Up(int basic, int margin){
-  digitalWrite(12, LOW);
-  random_delay(basic, margin);
-}
-
 //========================== "Ctrl"
 
 void Ctrl_Down(int basic, int margin){
-  digitalWrite(22, HIGH);
+  digitalWrite(35, HIGH);
   random_delay(basic, margin);
 }
 void Ctrl_Up(int basic, int margin){
-  digitalWrite(22, LOW);
+  digitalWrite(35, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "Alt"
 
 void Alt_Down(int basic, int margin){
-  digitalWrite(23, HIGH);
+  digitalWrite(38, HIGH);
   random_delay(basic, margin);
 }
 void Alt_Up(int basic, int margin){
-  digitalWrite(23, LOW);
+  digitalWrite(38, LOW);
   random_delay(basic, margin);
 }
 
-//========================== "LShift"
+//========================== "Shift"
 
-void LShift_Down(int basic, int margin){
-  digitalWrite(24, HIGH);
+void Shift_Down(int basic, int margin){
+  digitalWrite(33, HIGH);
   random_delay(basic, margin);
 }
-void LShift_Up(int basic, int margin){
-  digitalWrite(24, LOW);
+void Shift_Up(int basic, int margin){
+  digitalWrite(33, LOW);
   random_delay(basic, margin);
 }
 
@@ -409,44 +397,44 @@ void LShift_Up(int basic, int margin){
 //========================== "Z"
 
 void Z_Down(int basic, int margin){
-  digitalWrite(25, HIGH);
+  digitalWrite(26, HIGH);
   random_delay(basic, margin);
 }
 void Z_Up(int basic, int margin){
-  digitalWrite(25, LOW);
+  digitalWrite(26, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "X"
 
 void X_Down(int basic, int margin){
-  digitalWrite(26, HIGH);
+  digitalWrite(41, HIGH);
   random_delay(basic, margin);
 }
 void X_Up(int basic, int margin){
-  digitalWrite(26, LOW);
+  digitalWrite(41, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "C"
 
 void C_Down(int basic, int margin){
-  digitalWrite(27, HIGH);
+  digitalWrite(40, HIGH);
   random_delay(basic, margin);
 }
 void C_Up(int basic, int margin){
-  digitalWrite(27, LOW);
+  digitalWrite(40, LOW);
   random_delay(basic, margin);
 }
 
 //========================== "V"
 
 void V_Down(int basic, int margin){
-  digitalWrite(28, HIGH);
+  digitalWrite(43, HIGH);
   random_delay(basic, margin);
 }
 void V_Up(int basic, int margin){
-  digitalWrite(28, LOW);
+  digitalWrite(43, LOW);
   random_delay(basic, margin);
 }
 
@@ -457,32 +445,91 @@ void V_Up(int basic, int margin){
 //========================== "A"
 
 void A_Down(int basic, int margin){
-  digitalWrite(29, HIGH);
+  digitalWrite(34, HIGH);
   random_delay(basic, margin);
 }
 void A_Up(int basic, int margin){
-  digitalWrite(29, LOW);
+  digitalWrite(34, LOW);
   random_delay(basic, margin);
 }
 
-//========================== "D"
+//========================== "S"
+
+void S_Down(int basic, int margin){
+  digitalWrite(32, HIGH);
+  random_delay(basic, margin);
+}
+void S_Up(int basic, int margin){
+  digitalWrite(32, LOW);
+  random_delay(basic, margin);
+}
+
+//========================== "D"39
 
 void D_Down(int basic, int margin){
-  digitalWrite(30, HIGH);
+  digitalWrite(42, HIGH);
   random_delay(basic, margin);
 }
 void D_Up(int basic, int margin){
-  digitalWrite(30, LOW);
+  digitalWrite(42, LOW);
   random_delay(basic, margin);
 }
 
-//========================== "F"
+//========================== "F"40
 
 void F_Down(int basic, int margin){
-  digitalWrite(31, HIGH);
+  digitalWrite(44, HIGH);
   random_delay(basic, margin);
 }
 void F_Up(int basic, int margin){
-  digitalWrite(31, LOW);
+  digitalWrite(44, LOW);
+  random_delay(basic, margin);
+}
+
+//##########################
+//##########[1열]###########
+//##########################
+
+//========================== "Q"
+
+void Q_Down(int basic, int margin){
+  digitalWrite(28, HIGH);
+  random_delay(basic, margin);
+}
+void Q_Up(int basic, int margin){
+  digitalWrite(28, LOW);
+  random_delay(basic, margin);
+}
+
+//========================== "W"
+
+void W_Down(int basic, int margin){
+  digitalWrite(37, HIGH);
+  random_delay(basic, margin);
+}
+void W_Up(int basic, int margin){
+  digitalWrite(37, LOW);
+  random_delay(basic, margin);
+}
+
+//========================== "E"
+
+void E_Down(int basic, int margin){
+  digitalWrite(36, HIGH);
+  random_delay(basic, margin);
+}
+void E_Up(int basic, int margin){
+  digitalWrite(36, LOW);
+  random_delay(basic, margin);
+}
+
+//========================== "R"
+
+void R_Down(int basic, int margin){
+  digitalWrite(30, HIGH);
+  random_delay(basic, margin);
+}
+void R_Up(int basic, int margin){
+  digitalWrite(30, LOW);
   random_delay(basic, margin);
 }
