@@ -148,7 +148,7 @@ void Jump_cs(){
     X_Down(100,50);
     V_Up(0,0);
     C_Up(0,0);
-    X_Up(600,60);
+    X_Up(620,60);
     
 
   }else if(tsp == 2){
@@ -168,7 +168,7 @@ void Jump_cs(){
     Insert_Down(100,50);
     V_Up(0,0);
     C_Up(0,0);
-    X_Up(600,60);
+    Insert_Up(620,60);
 
   }else if(tsp == 3){
 
@@ -187,7 +187,7 @@ void Jump_cs(){
     PageUp_Down(100,50);
     V_Up(0,0);
     C_Up(0,0);
-    X_Up(600,60);
+    PageUp_Up(620,60);
 
 
   }else if(tsp == 4){
@@ -207,7 +207,7 @@ void Jump_cs(){
     Shift_Down(100,50);
     V_Up(0,0);
     C_Up(0,0);
-    X_Up(600,60);
+    Shift_Up(620,60);
     
 
     
@@ -228,7 +228,7 @@ void Jump_cs(){
     R_Down(100,50);   // R
     V_Up(0,0);
     C_Up(0,0);
-    X_Up(600,60);
+    R_Up(620,60);
     
 
   }else{
@@ -247,7 +247,7 @@ void Jump_cs(){
     X_Down(100,50);  // Shift
     V_Up(0,0);
     C_Up(0,0);
-    X_Up(600,60);
+    X_Up(620,60);
     
   }
 }
