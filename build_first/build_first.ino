@@ -59,9 +59,9 @@ void loop() {
     fordom = random(1,3);
     if(tsp == 1){
       W_Down(300,30);
-      W_Up(200,30);
+      W_Up(350,30);
     }
-    Left_Down(100,20);
+    Left_Down(200,20);
     for(int i = 0; i <= 1; i++){
       Jump_cs();
     }
@@ -72,6 +72,12 @@ void loop() {
 
     Right_Down(100,20);
     bleto();
+
+    fordom = random(1,3);
+    if(tsp == 1){
+      PageDown_Down(300,30);
+      PageDown_Up(350,30);
+    }
     for(int i = 0; i <= 2; i++){
     Jump_cs();
     }
@@ -113,7 +119,7 @@ void Pountain(){
     Jump_cs();
   }
   X_Down(250,50);
-  X_Up(200,20);
+  X_Up(400,20);
   Right_Up(100,20);
   
 }
@@ -135,14 +141,14 @@ void Jump_cs(){
       Q_Down(50,10);
       Q_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,20);
-      PageDown_Up(50,20);
+      Ctrl_Down(50,20);
+      Ctrl_Up(50,20);
     }
     
     X_Down(100,50);
-    V_Up(50,20);
-    C_Up(50,20);
-    X_Up(650,60);
+    V_Up(0,0);
+    C_Up(0,0);
+    X_Up(600,60);
     
 
   }else if(tsp == 2){
@@ -155,14 +161,14 @@ void Jump_cs(){
       Q_Down(50,10);
       Q_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,20);
-      PageDown_Up(50,20);
+      Ctrl_Down(50,20);
+      Ctrl_Up(50,20);
     }
     
     Insert_Down(100,50);
-    V_Up(50,20);
-    C_Up(50,20);
-    Insert_Up(650,60);
+    V_Up(0,0);
+    C_Up(0,0);
+    X_Up(600,60);
 
   }else if(tsp == 3){
 
@@ -174,14 +180,14 @@ void Jump_cs(){
       Q_Down(50,10);
       Q_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,20);
-      PageDown_Up(50,20);
+      Ctrl_Down(50,20);
+      Ctrl_Up(50,20);
     }
 
     PageUp_Down(100,50);
-    V_Up(50,20);
-    C_Up(50,20);
-    PageUp_Up(650,60);
+    V_Up(0,0);
+    C_Up(0,0);
+    X_Up(600,60);
 
 
   }else if(tsp == 4){
@@ -194,14 +200,14 @@ void Jump_cs(){
       Q_Down(50,10);
       Q_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,20);
-      PageDown_Up(50,20);
+      Ctrl_Down(50,20);
+      Ctrl_Up(50,20);
     }
     
     Shift_Down(100,50);
-    V_Up(50,20);
-    C_Up(50,20);
-    Shift_Up(650,60);
+    V_Up(0,0);
+    C_Up(0,0);
+    X_Up(600,60);
     
 
     
@@ -215,14 +221,14 @@ void Jump_cs(){
       Q_Down(50,10);
       Q_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,20);
-      PageDown_Up(50,20);
+      Ctrl_Down(50,20);
+      Ctrl_Up(50,20);
     }
 
     R_Down(100,50);   // R
-    V_Up(50,20);
-    C_Up(50,20);
-    R_Up(650,60);
+    V_Up(0,0);
+    C_Up(0,0);
+    X_Up(600,60);
     
 
   }else{
@@ -235,13 +241,13 @@ void Jump_cs(){
       Q_Down(50,10);
       Q_Up(50,10);
     }else if(skill == 4){
-      PageDown_Down(50,20);
-      PageDown_Up(50,20);
+      Ctrl_Down(50,20);
+      Ctrl_Up(50,20);
     }
     X_Down(100,50);  // Shift
-    V_Up(50,20);
-    C_Up(50,20);
-    X_Up(650,60);
+    V_Up(0,0);
+    C_Up(0,0);
+    X_Up(600,60);
     
   }
 }
