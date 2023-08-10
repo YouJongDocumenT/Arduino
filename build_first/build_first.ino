@@ -62,15 +62,14 @@ void loop() {
     for(int i = 0; i <= 1; i++){
       Jump_cs();
     }
-    bleto();
+    furi();
     Jump_cs();
     Left_Up(50,20);
     random_delay(300, 50);
 
     Right_Down(100,20);
-    Jump_cs();
-    furi();
-    for(int i = 0; i <= 1; i++){
+    bleto();
+    for(int i = 0; i <= 2; i++){
     Jump_cs();
     }
     X_Down(250,50);
@@ -85,19 +84,14 @@ void loop() {
 
 void Pountain(){
   Left_Down(100,20);
+  V_Down(100,30);;
+  C_Down(130,30);
+  V_Up(50,20);
+  C_Up(50,20);
+  Z_Down(100,20);
+  Z_Up(1400,100);
   Left_Up(100,20);
-  Ctrl_Down(300,30);
-  Ctrl_Up(600,60);
-  Right_Down(100,20);
-  Up_Down(50,20);
-  Up_Up(50,20);
-  Up_Down(50,20);
-  Up_Up(50,20);
-  Right_Up(50,20);
-  random_delay(300, 50);
 
-  Left_Down(100,20);
-  Left_Up(50,20);
   Ctrl_Down(300,30);
   Ctrl_Up(600,60);
 
@@ -111,9 +105,8 @@ void Pountain(){
 
   
   Right_Down(100,20);
-  Jump_cs();
-  furi();
-  for(int i = 0; i <= 1; i++){
+  bleto();
+  for(int i = 0; i <= 2; i++){
     Jump_cs();
   }
   X_Down(250,50);
@@ -250,148 +243,34 @@ void Jump_cs(){
   }
 }
 
-void Jump_cs_L(){
 
-  tsp = random(1,7);
-  if(tsp == 1){
-    
-    V_Down(100,30);
-    V_Up(50,20);
-    V_Down(150,30);
-    C_Down(100,30);
-
-    skill = random(1, 7);
-    if(skill == 1){
-      //Q_Down(50,10);
-      //Q_Up(50,10);
-    }else if(skill == 4){
-      //PageDown_Down(50,20);
-      //PageDown_Up(50,20);
-    }
-    
-    X_Down(150,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    X_Up(680,60);
-
-  }else if(tsp == 2){
-    
-    V_Down(100,30);
-    V_Up(50,20);
-    V_Down(150,30);
-    C_Down(100,30);
-
-    skill = random(1, 7);
-    if(skill == 1){
-      //Q_Down(50,10);
-      //Q_Up(50,10);
-    }else if(skill == 4){
-      //PageDown_Down(50,20);
-      //PageDown_Up(50,20);
-    }
-    
-    X_Down(150,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    X_Up(680,60);
-
-  }else if(tsp == 3){
-
-    V_Down(100,30);
-    V_Up(50,20);
-    V_Down(150,30);
-    C_Down(100,30);
-
-    skill = random(1, 7);
-    if(skill == 1){
-      //Q_Down(50,10);
-      //Q_Up(50,10);
-    }else if(skill == 4){
-      //PageDown_Down(50,20);
-      //PageDown_Up(50,20);
-    }
-
-    PageUp_Down(150,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    PageUp_Up(680,60);
-
-  }else if(tsp == 4){
-
-    V_Down(100,30);
-    V_Up(50,20);
-    V_Down(150,30);
-    C_Down(100,30);
-
-    skill = random(1, 7);
-    if(skill == 1){
-      //Q_Down(50,10);
-      //Q_Up(50,10);
-    }else if(skill == 4){
-      //PageDown_Down(50,20);
-      //PageDown_Up(50,20);
-    }
-    
-    Insert_Down(150,50);
-    V_Up(0,0);
-    C_Up(0,0);
-    Insert_Up(680,60);
-    
-  }else if(tsp == 5){
-    
-    V_Down(100,30);
-    V_Up(50,20);
-    V_Down(150,30);
-    C_Down(100,30);
-
-    skill = random(1, 7);
-    if(skill == 1){
-      //Q_Down(50,10);
-      //Q_Up(50,10);
-    }else if(skill == 4){
-      //PageDown_Down(50,20);
-      //PageDown_Up(50,20);
-    }
-
-    X_Down(150,50);   // R
-    V_Up(0,0);
-    C_Up(0,0);
-    X_Up(680,60);
-
-  }else{
-
-    V_Down(100,30);
-    V_Up(50,20);
-    V_Down(150,30);
-    C_Down(100,30);
-    
-    skill = random(1, 7);
-    if(skill == 1){
-      //Q_Down(50,10);
-      //Q_Up(50,10);
-    }else if(skill == 4){
-      //PageDown_Down(50,20);
-      //PageDown_Up(50,20);
-    }
-    X_Down(150,50);  // Shift
-    V_Up(0,0);
-    C_Up(0,0);
-    X_Up(680,60);
-    
-  }
-}
 
 
 void bleto(){
-  V_Down(100,30);
+  Right_Down(100,20);
+  V_Down(80,20);
+  C_Down(80,20);
+  V_Up(0,0);
+  C_Up(0,0);
+  F_Down(200,20);
+  F_Up(750,50);
+  Right_Up(50,20);
+
+  V_Down(200,20);
   V_Up(50,20);
-  V_Down(130,30);
-  C_Down(130,30);
 
   End_Down(150,50);
   V_Up(0,0);
   C_Up(0,0);
   End_Up(780,60);
+
+  Down_Down(100,20);
+  V_Down(400,40);
+  V_Up(50,20);
+  X_Down(200,20);
+  X_Up(50,20);
+  Down_Up(300,20);
+
 
 }
 
@@ -435,10 +314,11 @@ void furi(){
 }
 
 void Sudden_s(){
-  V_Down(100,30);
-  V_Up(50,20);
-  V_Down(100,30);
-  C_Down(200,30);
+  V_Down(100,20);
+  C_Down(100,20);
+  C_Up(350,30);
+  C_Down(100,20);
+  C_Up(50,20);
 
   A_Down(150,50);
   V_Up(0,0);
