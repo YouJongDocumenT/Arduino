@@ -68,7 +68,7 @@ void loop() {
     furi();
     Jump_cs();
     Left_Up(50,20);
-    random_delay(300, 50);
+    random_delay(500, 50);
 
     Right_Down(100,20);
     bleto();
@@ -84,7 +84,7 @@ void loop() {
     X_Down(250,50);
     X_Up(200,20);
     Right_Up(100,20);
-    random_delay(300, 50);
+    random_delay(500, 50);
   }
   Jump_cs();
   
